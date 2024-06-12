@@ -1,0 +1,54 @@
+trigger:
+- main
+
+resources:
+- repo: self
+
+variables:
+  # Container registry service connection established during pipeline creation
+  azureSubscription: "svc-conn-studyo-azuredevops"
+  containerRegistry: "pontisinternalregistry.azurecr.io"
+  env: "dev"
+  dockerComposeFile: "StudyO/docker-compose.yml"
+  dockerRegistryServiceConnection: "a5aa0d3a-5d45-48ad-9343-334aaa5ca3a2" # For new Azure Devops must be changed
+  imageRepositoryApi: "studyo-api"
+  keyVaultName:  "akv-studyo"
+  imageTag: $(Build.BuildNumber)
+  # Agent VM image name
+  vmImageName: "ubuntu-latest"
+
+stages:
+- stage: Build
+  displayName: Build image
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: ubuntu-latest
+    steps:
+    - task: DockerCompose@0
+      displayName: "Docker compose build"
+      inputs:
+        action: "Build services"
+        dockerComposeFile: $(dockerComposeFile)
+        containerregistrytype: "Azure Container Registry"
+        azureSubscription: $(azureSubscription)
+        azureContainerRegistry: $(containerRegistry)
+        additionalImageTags: $(imageTag)
+        dockerComposeCommand: build
+    - task: DockerCompose@0
+      displayName: "Push image"
+      inputs:
+        action: "Push services"
+        dockerComposeFile: $(dockerComposeFile)
+        containerregistrytype: "Azure Container Registry"
+        azureSubscription: $(azureSubscription)
+        azureContainerRegistry: $(containerRegistry)
+        additionalImageTags: $(imageTag)
+        dockerComposeCommand: push
+    - task: AzureKeyVault@2
+      inputs:
+        azureSubscription: $(azureSubscription)
+        KeyVaultName: $(keyVaultName)
+        SecretsFilter: "*"
+        RunAsPreJob: true

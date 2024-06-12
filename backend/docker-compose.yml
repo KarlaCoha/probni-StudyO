@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  studyo.api:
+    image: ${DOCKER_REGISTRY-}studyo-api
+    build:
+      context: .
+      dockerfile: src/StudyO.Api/Dockerfile
