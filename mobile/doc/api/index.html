@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="generator" content="made with love by dartdoc 8.0.3">
+  <meta name="description" content="studyo API docs, for the Dart programming language.">
+  <title>studyo - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li class="self-crumb">studyo package</li>
+  </ol>
+  <div class="self-name">studyo</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <h1 id="studyo-mobile-app">StudyO Mobile App</h1>
+<p>StudyO je mobilna edukativna aplikacija za osnovnoškolce koja kroz igru i personalizaciju potiče učenje. Glavne značajke uključuju:</p>
+<p>Personalizaciju: Korisnici kreiraju vlastite avatare i prilagođavaju kvizove koristeći AI na temelju bilješki s nastave.</p>
+<p>Interaktivnost: Dnevni kviz izazovi s prijateljima i prilagođeni kvizovi po razredima potiču redovito učenje.</p>
+<p>Inkluzivnost: Prilagodbe sadržaja omogućavaju pristupačnost djeci s posebnim potrebama.</p>
+<p>Cilj Studyja je učiniti učenje zabavnim i dostupnim za svu djecu, potičući njihov razvoj i produktivnost kroz inovativne i korisnički prilagođene funkcije.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#introduction--project-overview">Introduction / Project Overview</a></li>
+<li><a href="#visuals">Visuals</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#support">Support</a></li>
+<li><a href="#roadmap">Roadmap</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#authors-and-acknowledgment">Authors and Acknowledgment</a></li>
+</ul>
+<h2 id="introduction--project-overview">Introduction / Project Overview</h2>
+<p>Dobrodošli u naš projekt! Ova aplikacija dizajnirana je sa ciljem da učenje učini zabavnim i produktivnim za djecu. Kombiniramo inovativne pedagoške pristupe s najnovijom tehnologijom kako bismo stvorili interaktivno okruženje koje potiče djecu na učenje kroz igru.</p>
+<p><a href="https://imgur.com/P1bdFHI"><img src="https://i.imgur.com/P1bdFHI.png" title="source: imgur.com" width="1000"></a></p>
+<p>Na slici iznad možete vidjeti kako su organizirane ključne komponente našeg projekta. Slika pruža brz uvid u tehničku infrastrukturu i kako su pojedine faze i komponente projektirane da surađuju unutar projekta.</p>
+<h2 id="visuals">Visuals</h2>
+<p>Prvi zaslon koji korisnici vide je naš splash screen, dostupan u obje teme - svijetloj i tamnoj. Ovo osigurava da aplikacija pruža ugodno iskustvo u različitim svjetlosnim uvjetima.</p>
+<p><a href="https://imgur.com/VFxggwt"><img src="https://i.imgur.com/VFxggwt.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/o1C5mjc"><img src="https://i.imgur.com/o1C5mjc.jpg" title="source: imgur.com" width="150"></a></p>
+<p>Nakon uvodnog ekrana, korisnici su dočekani s glavnim sučeljem aplikacije, koje također podržava svijetlu i tamnu temu. U nastavku su prikazani glavni screenovi aplikacije u svijetloj temi.</p>
+<p><a href="https://imgur.com/Pg5CHeS"><img src="https://i.imgur.com/Pg5CHeS.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/YNLZ0Hl"><img src="https://i.imgur.com/YNLZ0Hl.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/lJ7avB3"><img src="https://i.imgur.com/lJ7avB3.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/9knqTCr"><img src="https://i.imgur.com/9knqTCr.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/rP1vBia"><img src="https://i.imgur.com/rP1vBia.jpg" title="source: imgur.com" width="150"></a></p>
+<h2 id="installation">Installation</h2>
+<h3 id="instalacija-frontenda-flutter">Instalacija Frontenda (Flutter)</h3>
+<p>Preduvjeti:
+Instalirajte Flutter SDK. Posjetite <a href="https://docs.flutter.dev/get-started/install">https://docs.flutter.dev/get-started/install</a> za detaljne upute ovisno o vašem operacijskom sustavu.</p>
+<p>Ako koristite VS Code, Android Studio ili IntelliJ, provjerite da su instalirani Dart i Flutter pluginovi.
+Kloniranje repozitorija:</p>
+<pre class="language-bash"><code class="language-bash">  git clone [URL repozitorija]
+  cd [ime repozitorija]
+</code></pre>
+<p>Instalacija dependencyja:</p>
+<pre class="language-bash"><code class="language-bash">  flutter pub get
+</code></pre>
+<p>Pokretanje aplikacije:</p>
+<pre class="language-bash"><code class="language-bash">  flutter run
+</code></pre>
+<h3 id="dependencies---flutter">Dependencies - Flutter</h3>
+<ul>
+<li><strong>intl</strong>: Omogućava lakšu internacionalizaciju i lokalizaciju aplikacija.</li>
+<li><strong>cupertino_icons</strong>: Standardni set ikona koji se koristi za iOS stil sučelja.</li>
+<li><strong>fluttermoji</strong>: Omogućava korisnicima da kreiraju prilagođene avatare.</li>
+<li><strong>http</strong>: Korišten za izradu HTTP zahtjeva za komunikaciju s backendom.</li>
+<li><strong>syncfusion_flutter_gauges</strong>: Koristi se za prikaz mjerača i dashboarda unutar aplikacije.</li>
+<li><strong>google_fonts</strong>: Omogućava korištenje raznovrsnih fontova direktno iz Google Fonts.</li>
+<li><strong>provider</strong>: Biblioteka za upravljanje stanjem aplikacije, koristi se za efikasniju arhitekturu.</li>
+<li><strong>url_launcher</strong>: Omogućava lansiranje URL-ova, korisno za otvaranje web stranica iz aplikacije.</li>
+<li><strong>flutter_dotenv</strong>: Koristi za učitavanje konfiguracijskih postavki iz .env datoteka.</li>
+<li><strong>flutter_donation_buttons</strong>: Koristi se za implementaciju gumbiju za donacije.</li>
+<li><strong>fl_chart</strong>: Omogućava izradu kompleksnih grafikona unutar aplikacije.</li>
+</ul>
+<h3 id="backend-implementacija">Backend Implementacija</h3>
+<p>Trenutno, backend za aplikaciju StudyO je u fazi usavršavanja i izrade te će biti implementiran u nadolazećoj fazi projekta. Detalji implementacije i specifikacije će biti objavljeni kako projekt napreduje. U međuvremenu, frontend aplikacija je funkcionalna i može se koristiti za pregled i testiranje osnovnih funkcionalnosti.</p>
+<h2 id="usage">Usage</h2>
+<h3 id="prijava-i-registracija">Prijava i registracija</h3>
+<ul>
+<li><strong>Prijava:</strong> Prijavite se unoseći svoje korisničke podatke na stranici za prijavu.</li>
+<li><strong>Registracija:</strong> Ako nemate račun, registrirajte se popunjavanjem potrebnih informacija i odgovaranjem na dodatna pitanja nakon uspješne verifikacije mailom.</li>
+</ul>
+<p><a href="https://imgur.com/dzjqvqi"><img src="https://i.imgur.com/dzjqvqi.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/yKXLI6c"><img src="https://i.imgur.com/yKXLI6c.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/Bo9Qk2G"><img src="https://i.imgur.com/Bo9Qk2G.jpg" title="source: imgur.com" width="150"></a></p>
+<h3 id="homepage">Homepage</h3>
+<ul>
+<li><strong>Leaderboard:</strong> Pregledajte leaderboard koji prikazuje korisnike s najviše bodova.</li>
+<li><strong>Aktivnosti:</strong> Prikazuje vaše dnevne bodove, streak i broj riješenih kvizova.</li>
+<li><strong>Navigacija:</strong> Koristite donji meni za navigaciju između različitih stranica.</li>
+</ul>
+<p><a href="https://imgur.com/Pg5CHeS"><img src="https://i.imgur.com/Pg5CHeS.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/bxNQR0O"><img src="https://i.imgur.com/bxNQR0O.jpg" title="source: imgur.com" width="150"></a></p>
+<h3 id="lista-predmetnih-izazova">Lista predmetnih izazova</h3>
+<ul>
+<li>Pregledajte listu predmeta i odaberite željeni predmet te kliknite na njega prikaz dostupnih kvizova.</li>
+<li>Kliknite na kviz koji želite igrati i pratite upute na ekranu (točni odgovori prikazani su zelenom bojom, a netočni naranđastom). Na kraju kviza moći ćete provjeriti točne odgovore, a klikom na "OK!" vraćate se na homepage.</li>
+<li>Napomena kako su kvizovi pisani po školskom kurikulumu kako biste mogli riješavati kvizove o gradivu koje ste uistinu i radili u školi.</li>
+</ul>
+<p><a href="https://imgur.com/YNLZ0Hl"><img src="https://i.imgur.com/YNLZ0Hl.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/fmFUB4A"><img src="https://i.imgur.com/fmFUB4A.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/k9B3I1b"><img src="https://i.imgur.com/k9B3I1b.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/Yif1dv7"><img src="https://i.imgur.com/Yif1dv7.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/U5IfWgn"><img src="https://i.imgur.com/U5IfWgn.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/PcKK41a"><img src="https://i.imgur.com/PcKK41a.jpg" title="source: imgur.com" width="150"></a></p>
+<h3 id="tvoj-kviz">Tvoj kviz</h3>
+<ul>
+<li>Unesite gradivo ili bilješke s nastave i generirajte svoj AI kviz!</li>
+<li>Odaberite težinu pitanja pomoću slajdera (lagano, srednje, teško).</li>
+<li>Kliknite na "Generiraj kviz" za stvaranje kviza ili na "Zaigraj kviz" za povratak na stranicu s kvizovima.</li>
+</ul>
+<p><a href="https://imgur.com/jjUrpQO"><img src="https://i.imgur.com/jjUrpQO.jpg" title="source: imgur.com" width="150"></a></p>
+<h3 id="izazovi">Izazovi</h3>
+<ul>
+<li><strong>Izazovi prijatelja:</strong> Odaberite opciju za slanje izazova, izaberite prijatelja i kviz, zatim pošaljite izazov.</li>
+<li><strong>Igraj izazove:</strong> Pregledajte i igrajte izazove koje su vam poslali vaši prijatelji.</li>
+</ul>
+<p><a href="https://imgur.com/eACOWkR"><img src="https://i.imgur.com/eACOWkR.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/CgkNENX"><img src="https://i.imgur.com/CgkNENX.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/S11UfBA"><img src="https://i.imgur.com/S11UfBA.jpg" title="source: imgur.com" width="150"></a></p>
+<h3 id="moj-profil">Moj profil</h3>
+<ul>
+<li>Prilagodite svoj avatar srednjim gumbom ispod avatara i pregledajte osobne informacije na kraju profila.</li>
+<li>Pregledajte tjedni grafikon s bodovima za praćenje vašeg napretka.</li>
+<li>Klikom na lijevi gumb ispod avatara, vratite se na predmetne kvizove, a klikom na desni gumb ispod avatara provjerite svoju listu prijatelja.</li>
+</ul>
+<p><a href="https://imgur.com/rP1vBia"><img src="https://i.imgur.com/rP1vBia.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/5NMMGHx"><img src="https://i.imgur.com/5NMMGHx.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/RvUKdNH"><img src="https://i.imgur.com/RvUKdNH.jpg" title="source: imgur.com" width="150"></a></p>
+<h3 id="hamburger-meni">Hamburger meni</h3>
+<ul>
+<li><strong>Avatar  i osobni podaci:</strong> Ovdje možete vidjeti Vaš avatar i razred.</li>
+<li><strong>Postavke:</strong> Omogućite prilagođavanje za posebne potrebe, odaberite jezik, omogućite zvukove ili pročitajte pojedinosti o korisniku i provjeru postavki privatnosti. Klikom na "Pojedinosti o korisniku" možete vidjeti sve svoje podatke koje dijelite s nama, a klikom na "Provjeru postavki privatnosti" provjerite svoja prava i privatnost. U ovim postavkama klik na widget o pravima i zaštiti djece odvest će Vas na UNICEF-ovu stranicu gdje se možete pobliže upoznati sa svojim pravima i sigurnošću.</li>
+<li><strong>Izazovi:</strong> Pregledajte i igrajte izazove koje su Vam poslali vaši prijatelji.</li>
+<li><strong>Zahtjevi za prijateljstvo:</strong> Pregledajte zahtjteve za prijateljstvo koje su Vam poslali vaši prijatelji.</li>
+<li><strong>Odjava:</strong> Odjavite se sa svog korisničkog računa.</li>
+<li><strong>Tema:</strong> Birajte tamni ili svijetli način rada.</li>
+</ul>
+<p><a href="https://imgur.com/mn3Fk4B"><img src="https://i.imgur.com/mn3Fk4B.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/Mc0lNmB"><img src="https://i.imgur.com/Mc0lNmB.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/3VDlzMx"><img src="https://i.imgur.com/3VDlzMx.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/kZdT2xq"><img src="https://i.imgur.com/kZdT2xq.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/qYwCShJ"><img src="https://i.imgur.com/qYwCShJ.jpg" title="source: imgur.com" width="150"></a> <a href="https://imgur.com/y65nSFi"><img src="https://i.imgur.com/y65nSFi.jpg" title="source: imgur.com" width="150"></a></p>
+<h2 id="support">Support</h2>
+<p>Ako imate bilo kakvih pitanja ili trebate pomoć, slobodno se obratite na bilo koju od sljedećih adresa e-pošte. Naš tim će Vam rado pomoći.</p>
+<ul>
+<li>Opća podrška: <a href="mailto:trozman@tvz.hr">trozman@tvz.hr</a></li>
+<li>Tehnička pomoć: <a href="mailto:kcoha@tvz.hr">kcoha@tvz.hr</a></li>
+<li>Pitanja o suradnji: <a href="mailto:bmaracic@tvz.hr">bmaracic@tvz.hr</a></li>
+</ul>
+<p>Molimo Vas da prilikom slanja e-pošte navedete što detaljniji opis Vašeg upita kako bismo Vam mogli što bolje pomoći.</p>
+<h2 id="roadmap">Roadmap</h2>
+<h3 id="kratkoroni-ciljevi-1-6-mjeseci">Kratkoročni ciljevi (1-6 mjeseci)</h3>
+<ol>
+<li>
+<p><strong>Poboljšanje i nadogradnja AI funkcionalnosti</strong></p>
+<ul>
+<li>Razviti naprednije AI algoritme za personalizirano učenje.</li>
+<li>Testirati i implementirati nove AI značajke koje pomažu u povećanju produktivnosti učenja.</li>
+</ul>
+</li>
+<li>
+<p><strong>Istraživanje i ankete za povratne informacije</strong></p>
+<ul>
+<li>Provoditi redovite ankete među korisnicima kako bi se dobile povratne informacije za poboljšanje aplikacije.</li>
+<li>Analizirati podatke za bolje razumijevanje potreba i želja korisnika.</li>
+</ul>
+</li>
+<li>
+<p><strong>Prilagodbe za djecu s posebnim potrebama</strong></p>
+<ul>
+<li>Razviti značajke prilagođene za slijepe i gluhe korisnike te ostale posebne potrebe.</li>
+<li>Suradnja s stručnjacima za osiguranje adekvatne podrške i inkluzivnosti.</li>
+</ul>
+</li>
+</ol>
+<h3 id="srednjoroni-ciljevi-6-12-mjeseci">Srednjoročni ciljevi (6-12 mjeseci)</h3>
+<ol start="4">
+<li>
+<p><strong>Početak ekspanzije publike na srednjoškolce</strong></p>
+<ul>
+<li>Razvijati sadržaj i funkcionalnosti koje su prilagođene potrebama srednjoškolaca.</li>
+<li>Provesti pilot-projekt u nekoliko srednjih škola kako bi se testirala prihvatljivost aplikacije.</li>
+</ul>
+</li>
+<li>
+<p><strong>Proširenje tima</strong></p>
+<ul>
+<li>Proširenje s dodatnim članovima tima.</li>
+<li>Organiziranje treninga za nove članove tima kako bi se osigurala kvaliteta i dosljednost rada.</li>
+</ul>
+</li>
+</ol>
+<h3 id="dugoroni-ciljevi-1-5-godina">Dugoročni ciljevi (1-5 godina)</h3>
+<ol start="6">
+<li>
+<p><strong>Ekspanzija na međunarodno tržište</strong></p>
+<ul>
+<li>Lokalizacija aplikacije za različite jezike i kulture.</li>
+<li>Istraživanje specifičnih tržišta i prilagodba sadržaja prema lokalnim obrazovnim standardima.</li>
+</ul>
+</li>
+<li>
+<p><strong>Targetiranje studenata fakulteta</strong></p>
+<ul>
+<li>Razvoj modula i kurseva koji su usmjereni na akademske potrebe studenata.</li>
+<li>Partnerstva s fakultetima i univerzitetima za integraciju aplikacije u obrazovni proces.</li>
+</ul>
+</li>
+</ol>
+<h3 id="neprekidna-evaluacija-i-prilagodba">Neprekidna evaluacija i prilagodba</h3>
+<ul>
+<li>Stalna optimizacija i unapređenje.</li>
+<li>Kontinuirano provjeravanje s korisnicima putem istraživanja i anketa.</li>
+<li>Brzo reagiranje na povratne informacije i implementacija neophodnih izmjena.</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>Zahvaljujemo na interesu za naš projekt! Mi smo grupa studentica koja radi na ovom projektu s puno entuzijazma. Iako trenutno radimo kao zatvoreni tim, uvijek smo otvoreni za nove ideje i suradnike koji bi mogli doprinijeti našem zabavno-edukativnom sustavu i pomaganju djeci.</p>
+<h3 id="how-to-join-us">How to join us?</h3>
+<p>Ako se vidite kao dio našeg tima i želite se pridružiti, ovdje je kako to možete učiniti:</p>
+<ol>
+<li><strong>Pošaljite nam e-mail</strong>: Pišite nam na <a href="mailto:bmaracic@tvz.hr">bmaracic@tvz.hr</a> s Vašim idejama ili prijedlozima, kratkim opisom Vaših vještina ili iskustava koja smatrate korisnima. Uključite što Vas motivira da radite na ovom projektu.</li>
+<li><strong>Upoznajmo se</strong>: Ako se čini da postoji dobar fit, organizirat ćemo kratki online sastanak. To nam daje priliku da razgovaramo više o projektu, vašim idejama i kako bismo mogli surađivati.</li>
+<li><strong>Zajednički rad</strong>: Ako se složimo da postoji zajednički interes, možemo početi raditi zajedno na projektu. Cijenimo svaki doprinos i vjerujemo da timski rad može donijeti najbolje rezultate.</li>
+</ol>
+<p>Svi u timu imaju važnu ulogu u stvaranju nečeg korisnog i zabavnog, stoga tražimo osobe koje su strastvene prema stvaranju edukativnih rješenja i koje žele napraviti pozitivnu promjenu u svijetu obrazovanja.</p>
+<p>Zajedno možemo ostvariti veliki utjecaj na edukaciju i unaprijediti živote mnoge djece!</p>
+<h2 id="authors-and-acknowledgment">Authors and Acknowledgment</h2>
+<h3 id="authors">Authors</h3>
+<p>Ovaj projekt je rezultat napornog rada i predanosti sljedećih autora:</p>
+<ul>
+<li><strong>Karla Coha</strong> - <a href="https://www.linkedin.com/in/karla-coha-b2248b299?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=ios_app">LinkedIn profil</a></li>
+<li><strong>Barbara Maračić</strong> - <a href="https://www.linkedin.com/in/barbara-mara%C4%8Di%C4%87-3414a1264?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=ios_app">LinkedIn profil</a></li>
+<li><strong>Tamara Rožman</strong> - <a href="https://hr.linkedin.com/in/tamara-ro%C5%BEman-912051258?trk=public_profile_browsemap-profile">LinkedIn profil</a></li>
+</ul>
+<p>Svaki od autora pridonio je jedinstvenim vještinama i perspektivama, što je omogućilo razvoj ovog inovativnog i edukativnog sustava.</p>
+<h3 id="acknowledgments">Acknowledgments</h3>
+<p>Posebnu zahvalu želimo uputiti našoj mentorskoj firmi, <strong>Pontisu</strong>, čija su podrška i vodstvo bili vrlo bitni u realizaciji ovog projekta. Njihovo stručno znanje i iskustvo pomogli su nam da prevladamo brojne izazove i uspješno razvijemo našu aplikaciju. Također, zahvaljujemo i samoj organizaciji na konceptu mc2 natjecanja koje nam je omogućilo napredovanje ovog projekta i potaklo nas da naučimo nove stvari i steknemo bitna poznanstva.</p>
+<p>Također, zahvaljujemo se svima koji su direktno ili indirektno doprinijeli našem projektu, inspirirajući nas i pružajući podršku kroz cijeli proces razvoja i, naravno, našim osnovnoškolcima na feedbacku i interesu za korištenjem Studyja!</p>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="homepage">
+  <span class="name"><a href="screens_homepage/screens_homepage-library.html">screens\homepage</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="line_chart">
+  <span class="name"><a href="charts_line_chart/charts_line_chart-library.html">charts\line_chart</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="login">
+  <span class="name"><a href="screens_login/screens_login-library.html">screens\login</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="main">
+  <span class="name"><a href="main/main-library.html">main</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="personalized_quiz">
+  <span class="name"><a href="screens_personalized_quiz/screens_personalized_quiz-library.html">screens\personalized_quiz</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="play_challenge">
+  <span class="name"><a href="screens_play_challenge/screens_play_challenge-library.html">screens\play_challenge</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="play_quiz">
+  <span class="name"><a href="screens_play_quiz/screens_play_quiz-library.html">screens\play_quiz</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="profile_page">
+  <span class="name"><a href="screens_profile_page/screens_profile_page-library.html">screens\profile_page</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="quiz_challenge">
+  <span class="name"><a href="screens_quiz_challenge/screens_quiz_challenge-library.html">screens\quiz_challenge</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="register">
+  <span class="name"><a href="screens_register/screens_register-library.html">screens\register</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="select_quiz">
+  <span class="name"><a href="screens_select_quiz/screens_select_quiz-library.html">screens\select_quiz</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="send_challenge">
+  <span class="name"><a href="screens_send_challenge/screens_send_challenge-library.html">screens\send_challenge</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="settings">
+  <span class="name"><a href="screens_settings/screens_settings-library.html">screens\settings</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="signup">
+  <span class="name"><a href="screens_signup/screens_signup-library.html">screens\signup</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="splash">
+  <span class="name"><a href="screens_splash/screens_splash-library.html">screens\splash</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="styles">
+  <span class="name"><a href="styles_styles/styles_styles-library.html">styles\styles</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="theme_provider">
+  <span class="name"><a href="providers_theme_provider/providers_theme_provider-library.html">providers\theme_provider</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="themes">
+  <span class="name"><a href="styles_themes/styles_themes-library.html">styles\themes</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="user">
+  <span class="name"><a href="entities_user/entities_user-library.html">entities\user</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="user_details">
+  <span class="name"><a href="screens_user_details/screens_user_details-library.html">screens\user_details</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="user_provider">
+  <span class="name"><a href="providers_user_provider/providers_user_provider-library.html">providers\user_provider</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="user_service">
+  <span class="name"><a href="services_user_service/services_user_service-library.html">services\user_service</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="verification">
+  <span class="name"><a href="screens_verification/screens_verification-library.html">screens\verification</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="verification_questions">
+  <span class="name"><a href="screens_verification_questions/screens_verification_questions-library.html">screens\verification_questions</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="win_quiz">
+  <span class="name"><a href="screens_win_quiz/screens_win_quiz-library.html">screens\win_quiz</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+        </dl>
+      </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li class="self-crumb">studyo package</li>
+</ol>
+
+
+    <h5 class="hidden-xs"><span class="package-name">studyo</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="screens_homepage/screens_homepage-library.html">screens\homepage</a></li>
+      <li><a href="charts_line_chart/charts_line_chart-library.html">charts\line_chart</a></li>
+      <li><a href="screens_login/screens_login-library.html">screens\login</a></li>
+      <li><a href="main/main-library.html">main</a></li>
+      <li><a href="screens_personalized_quiz/screens_personalized_quiz-library.html">screens\personalized_quiz</a></li>
+      <li><a href="screens_play_challenge/screens_play_challenge-library.html">screens\play_challenge</a></li>
+      <li><a href="screens_play_quiz/screens_play_quiz-library.html">screens\play_quiz</a></li>
+      <li><a href="screens_profile_page/screens_profile_page-library.html">screens\profile_page</a></li>
+      <li><a href="screens_quiz_challenge/screens_quiz_challenge-library.html">screens\quiz_challenge</a></li>
+      <li><a href="screens_register/screens_register-library.html">screens\register</a></li>
+      <li><a href="screens_select_quiz/screens_select_quiz-library.html">screens\select_quiz</a></li>
+      <li><a href="screens_send_challenge/screens_send_challenge-library.html">screens\send_challenge</a></li>
+      <li><a href="screens_settings/screens_settings-library.html">screens\settings</a></li>
+      <li><a href="screens_signup/screens_signup-library.html">screens\signup</a></li>
+      <li><a href="screens_splash/screens_splash-library.html">screens\splash</a></li>
+      <li><a href="styles_styles/styles_styles-library.html">styles\styles</a></li>
+      <li><a href="providers_theme_provider/providers_theme_provider-library.html">providers\theme_provider</a></li>
+      <li><a href="styles_themes/styles_themes-library.html">styles\themes</a></li>
+      <li><a href="entities_user/entities_user-library.html">entities\user</a></li>
+      <li><a href="screens_user_details/screens_user_details-library.html">screens\user_details</a></li>
+      <li><a href="providers_user_provider/providers_user_provider-library.html">providers\user_provider</a></li>
+      <li><a href="services_user_service/services_user_service-library.html">services\user_service</a></li>
+      <li><a href="screens_verification/screens_verification-library.html">screens\verification</a></li>
+      <li><a href="screens_verification_questions/screens_verification_questions-library.html">screens\verification_questions</a></li>
+      <li><a href="screens_win_quiz/screens_win_quiz-library.html">screens\win_quiz</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+
+</main>
+
+<footer>
+  <span class="no-break">
+    studyo
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+
